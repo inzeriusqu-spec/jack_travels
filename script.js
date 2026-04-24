@@ -79,7 +79,7 @@ const travelData = [
         photos: [
             { id: 1, url: "https://www.indonesia.travel/contentassets/a60156ac7b454b12b42824f52a4be98b/pura-uluwatu.jpeg", title: "Храм Улувату", desc: "Знаменитый храм на скале" },
             { id: 2, url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/5a/e2/51/view-indah.jpg?w=900&h=500&s=1", title: "Пляж Кута", desc: "Популярный пляж для сёрфинга" },
-            { id: 3, url: "https://www.danas.rs/wp-content/uploads/2026/02/shutterstock_2478946463-e1770116570783.jpg", title: "Рисовые террасы", desc: "Тегаллаланг — рисовые террасы Убуда" }
+            { id: 3, url: "https://avatars.mds.yandex.net/i?id=3c1d946199a98033d812619af12d9029_l-5333398-images-thumbs&n=13", title: "Рисовые террасы", desc: "Тегаллаланг — рисовые террасы Убуда" }
         ]
     },
     {
@@ -159,7 +159,7 @@ const travelData = [
         photos: [
             { id: 1, url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Geirangerfjord_.jpg/1280px-Geirangerfjord_.jpg", title: "Гейрангер-фьорд", desc: "Самый известный фьорд" },
             { id: 2, url: "https://s.yimg.com/ny/api/res/1.2/aI8ZVB4F_fdIQ.PTV9EYww--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyMDA7aD03OTg7Y2Y9d2VicA--/https://media.zenfs.com/en/travel.travelleisure.com/b27b462cb398315710fc98e030d4f46d", title: "Северное сияние", desc: "Аврора над Тромсё" },
-            { id: 3, url: "https://photos.travellerspoint.com/752307/large_6A4D2150DBBE8201E1FDA90F22E8E1B4.jpg", title: "Города", desc: "Берген — город между горами" }
+            { id: 3, url: "https://ic.pics.livejournal.com/kukmor/14257925/3960671/3960671_original.jpg", title: "Города", desc: "Берген — город между горами" }
         ]
     },
     {
@@ -223,7 +223,7 @@ const travelData = [
         photos: [
             { id: 1, url: "https://img-fotki.yandex.ru/get/9824/161539159.d/0_16556c_10d8a32e_XL.jpg", title: "Айя-София", desc: "Величественный собор и мечеть, символ Стамбула" },
             { id: 2, url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Blue_Mosque_2017.jpg/1280px-Blue_Mosque_2017.jpg", title: "Голубая мечеть", desc: "Знаменитая мечеть с шестью минаретами" },
-            { id: 3, url: "https://publika.az/storage/2025/05/13/jsjbwik4jfcii4hvebnatck2twx7qfpbobn3u31m_1200.webp", title: "Босфор", desc: "Прогулка по проливу между Европой и Азией" }
+            { id: 3, url: "https://img.freepik.com/premium-photo/view-bridge-bosphorus-from-hill_1048944-3824674.jpg?semt=ais_hybrid", title: "Босфор", desc: "Прогулка по проливу между Европой и Азией" }
         ]
     }
 ];
