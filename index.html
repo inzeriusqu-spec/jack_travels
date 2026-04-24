@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Путешествуем с Джеком | Блог о приключениях по всему миру</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Путешествуем с Джеком</h1>
+                    <p>блог о приключениях по всей планете и секретах опытного путешественника</p>
+                </div>
+                <div class="header-right">
+                    <button id="themeToggle" class="theme-toggle">
+                        <span class="theme-icon">🌙</span>
+                        <span class="theme-text">Тёмная тема</span>
+                    </button>
+                    <nav class="nav-links">
+                        <a href="#" class="nav-link active" data-page="home">Главная</a>
+                        <a href="#" class="nav-link" data-page="story">История</a>
+                        <a href="#" class="nav-link" data-page="gallery">Галерея</a>
+                        <a href="#" class="nav-link" data-page="reviews">Отзывы</a>
+                        <a href="#" class="nav-link" data-page="contacts">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+            <div class="hero">
+                <h2>Путешествуй, вдохновляйся, открывай</h2>
+                <p>Лучшие направления, советы и яркие эмоции — от Анд до Сахары вместе с Джеком</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="search-section" id="searchSection">
+                <div class="search-card">
+                    <div class="search-input">
+                        <span>🔍</span>
+                        <input type="text" id="searchInput" placeholder="Поиск по странам, городам или регионам...">
+                    </div>
+                    <div class="filter-buttons" id="filterContainer">
+                        <button class="filter-btn active" data-filter="all">Все места</button>
+                        <button class="filter-btn" data-filter="Европа">Европа</button>
+                        <button class="filter-btn" data-filter="Азия">Азия</button>
+                        <button class="filter-btn" data-filter="Америка">Америка</button>
+                        <button class="filter-btn" data-filter="Африка">Африка</button>
+                        <button class="filter-btn" data-filter="Океания">Океания</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="homePage">
+                <div id="cardsGrid" class="destinations-grid"></div>
+                <div id="noResults" class="no-results" style="display: none;">
+                    😔 Ничего не найдено по вашему запросу
+                </div>
+            </div>
+
+            <div id="storyPage" class="page-content" style="display: none;">
+                <div class="story-container">
+                    <h2 class="page-title">История Джека: Как я стал вечным странником</h2>
+                    <div class="story-grid">
+                        <div class="story-text">
+                            <p>Привет! Меня зовут Джек, и 10 лет назад я работал в офисе, мечтая о приключениях. Однажды я понял, что жизнь слишком коротка, чтобы сидеть на одном месте.</p>
+                            <p>Я уволился, купил билет в одну сторону и начал своё большое путешествие. За эти годы я:</p>
+                            <ul>
+                                <li>Объехал более 45 стран на всех континентах</li>
+                                <li>Взошёл на Килиманджаро и Эльбрус</li>
+                                <li>Переплыл Ла-Манш и нырял с акулами</li>
+                                <li>Провёл месяц в джунглях Амазонки</li>
+                                <li>Проехал Транссибирскую магистраль</li>
+                            </ul>
+                            <p>Теперь я делюсь своим опытом, чтобы вдохновить других. Путешествия изменили мою жизнь, и я верю, что каждый может найти свой путь к приключениям!</p>
+                            <div class="story-stats">
+                                <div class="stat">45+ стран</div>
+                                <div class="stat">250+ перелётов</div>
+                                <div class="stat">15000+ фото</div>
+                                <div class="stat">12 вершин</div>
+                            </div>
+                        </div>
+                        <div class="story-image">
+                            <img src="https://www.patagoniamas.com/wp-content/uploads/2024/07/hiking03.webp" alt="Джек">
+                            <p class="image-caption">Джек на вершине горы в Патагонии</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="galleryPage" class="page-content" style="display: none;">
+                <h2 class="page-title">Галерея путешествий Джека</h2>
+                <div class="gallery-grid" id="galleryGrid"></div>
+            </div>
+
+            <div id="reviewsPage" class="page-content" style="display: none;">
+                <div class="reviews-container">
+                    <h2 class="page-title">Отзывы путешественников</h2>
+                    <div class="reviews-stats">
+                        <div class="rating-summary">
+                            <div class="overall-rating" id="overallRating">4.8</div>
+                            <div class="rating-stars" id="overallStars">★★★★★</div>
+                            <div class="rating-count" id="ratingCount">На основе 0 отзывов</div>
+                        </div>
+                        <button id="addReviewBtn" class="add-review-btn">Написать отзыв</button>
+                    </div>
+                    <div class="reviews-grid" id="reviewsGrid"></div>
+                </div>
+            </div>
+
+            <div id="contactsPage" class="page-content" style="display: none;">
+                <div class="contacts-container">
+                    <h2 class="page-title">Свяжитесь с Джеком</h2>
+                    <div class="contacts-grid">
+                        <div class="contact-info">
+                            <h3>Джек — профессиональный путешественник</h3>
+                            <p>Я всегда рад новым друзьям, вопросам о путешествиях и интересным предложениям!</p>
+                            <div class="contact-details">
+                                <div class="contact-item">Email: jack@travelwithjack.com</div>
+                                <div class="contact-item">Telegram/WhatsApp: +7 (999) 123-45-67</div>
+                                <div class="contact-item">База: Москва, но чаще в пути</div>
+                            </div>
+                            <div class="social-links">
+                                <h4>Подписывайтесь в соцсетях:</h4>
+                                <div class="social-icons">
+                                    <a href="#" class="social-link">Instagram: @jack_travels</a>
+                                    <a href="#" class="social-link">Twitter: @jack_adventures</a>
+                                    <a href="#" class="social-link">YouTube: Джек путешествует</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-form">
+                            <h3>Напишите мне</h3>
+                            <form id="contactForm">
+                                <input type="text" id="contactName" placeholder="Ваше имя" required>
+                                <input type="email" id="contactEmail" placeholder="Email" required>
+                                <textarea id="contactMessage" rows="4" placeholder="Ваше сообщение..." required></textarea>
+                                <button type="submit">Отправить сообщение</button>
+                            </form>
+                            <div id="formMessage" class="form-message"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-section">
+                <h2 class="faq-title">Часто задаваемые вопросы о путешествиях</h2>
+                <div class="faq-grid" id="faqGrid"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Модальное окно для отзыва -->
+    <div id="reviewModal" class="modal">
+        <div class="modal-content modal-review">
+            <span class="modal-close" id="closeReviewModalBtn">&times;</span>
+            <h3>Добавить отзыв</h3>
+            <form id="reviewForm" class="review-form">
+                <input type="text" id="reviewName" placeholder="Ваше имя" required>
+                <div class="rating-select">
+                    <span>Ваша оценка:</span>
+                    <div class="stars-input" id="starsInput">
+                        <span data-value="1">☆</span>
+                        <span data-value="2">☆</span>
+                        <span data-value="3">☆</span>
+                        <span data-value="4">☆</span>
+                        <span data-value="5">☆</span>
+                    </div>
+                    <input type="hidden" id="reviewRating" value="5">
+                </div>
+                <input type="text" id="reviewCountry" placeholder="Какая страна понравилась?">
+                <textarea id="reviewText" rows="4" placeholder="Поделитесь впечатлениями..." required></textarea>
+                <button type="submit">Отправить отзыв</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Модальное окно с 3 фото -->
+    <div id="placeModal" class="modal">
+        <div class="modal-content modal-place">
+            <span class="modal-close" id="closePlaceModalBtn">&times;</span>
+            <h2 id="placeModalTitle"></h2>
+            <p id="placeModalDesc" class="place-modal-desc"></p>
+            <div class="place-photos-title">Галерея места</div>
+            <div class="place-photos-grid" id="placePhotosGrid"></div>
+            <div class="place-tips"><strong>Советы от Джека:</strong><p id="placeTips"></p></div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для просмотра фото -->
+    <div id="photoViewModal" class="modal">
+        <div class="modal-content modal-photo-view">
+            <span class="modal-close" id="closePhotoViewBtn">&times;</span>
+            <div id="photoViewImage" class="photo-view-img"></div>
+            <h3 id="photoViewTitle"></h3>
+            <p id="photoViewDesc"></p>
+            <div class="photo-nav">
+                <button id="prevPhotoBtn" class="photo-nav-btn">◀ Предыдущее</button>
+                <span id="photoCounter" class="photo-counter"></span>
+                <button id="nextPhotoBtn" class="photo-nav-btn">Следующее ▶</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для полезных ссылок -->
+    <div id="linkModal" class="modal">
+        <div class="modal-content modal-small">
+            <span class="modal-close" id="closeLinkModalBtn">&times;</span>
+            <h3 id="linkModalTitle"></h3>
+            <div id="linkModalContent" class="link-modal-content"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-col">
+                    <h3>Путешествуем с Джеком</h3>
+                    <p>Исследуй лучшие направления вместе со мной. Каждое путешествие начинается с мечты и смелости.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Полезные ссылки</h4>
+                    <div class="useful-links">
+                        <a href="#" class="useful-link" data-link="tips">Советы туристам</a>
+                        <a href="#" class="useful-link" data-link="seasons">Лучшее время для поездок</a>
+                        <a href="#" class="useful-link" data-link="budget">Бюджетные маршруты</a>
+                        <a href="#" class="useful-link" data-link="gear">Что взять в дорогу</a>
+                        <a href="#" class="useful-link" data-link="insurance">Страховка для путешествий</a>
+                        <a href="#" class="useful-link" data-link="visa">Визовые вопросы</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <p>jack@travelwithjack.com<br>+7 (999) 123-45-67<br>@jack_travels</p>
+                </div>
+            </div>
+            <div class="copyright">© 2025 Блог «Путешествуем с Джеком». Все права защищены.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
