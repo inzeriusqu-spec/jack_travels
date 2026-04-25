@@ -2117,3 +2117,228 @@ body.dark .theme-toggle:hover {
     from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* ========== ДОПОЛНИТЕЛЬНЫЕ ПРАВИЛА ДЛЯ ТЁМНОЙ ТЕМЫ ========== */
+
+/* Цвет текста для всех основных элементов */
+body.dark .filter-btn,
+body.dark .filter-btn:not(.active) {
+    color: #e8e8e8 !important;
+}
+
+body.dark .filter-btn.active {
+    color: #0f1215 !important;
+}
+
+/* Кнопка "Смотреть фото" */
+body.dark .read-more {
+    color: #e8b87a !important;
+}
+
+body.dark .read-more:hover {
+    color: #ffd966 !important;
+}
+
+/* Кнопка "Написать отзыв" */
+body.dark .add-review-btn {
+    background: #e8b87a !important;
+    color: #0f1215 !important;
+}
+
+body.dark .add-review-btn:hover {
+    background: #ffd966 !important;
+}
+
+/* Кнопки в модальных окнах */
+body.dark .photo-nav-btn {
+    background: #e8b87a !important;
+    color: #0f1215 !important;
+}
+
+body.dark .photo-nav-btn:hover {
+    background: #ffd966 !important;
+}
+
+/* Кнопка отправки формы */
+body.dark .contact-form button,
+body.dark .review-form button {
+    background: #e8b87a !important;
+    color: #0f1215 !important;
+}
+
+body.dark .contact-form button:hover,
+body.dark .review-form button:hover {
+    background: #ffd966 !important;
+}
+
+body.dark .contact-form button {
+    color: #0f1215 !important;
+}
+
+/* Ссылки в подвале */
+body.dark .useful-link {
+    color: #b0b8b8 !important;
+}
+
+body.dark .useful-link:hover {
+    color: #e8b87a !important;
+}
+
+/* Социальные ссылки */
+body.dark .social-link {
+    color: #b0b8b8 !important;
+}
+
+body.dark .social-link:hover {
+    color: #e8b87a !important;
+}
+
+/* Заголовки */
+body.dark .page-title,
+body.dark .faq-title,
+body.dark .contact-info h3,
+body.dark .contact-form h3 {
+    color: #e8b87a !important;
+}
+
+/* Рейтинг и звёзды */
+body.dark .rating {
+    color: #e8b87a !important;
+}
+
+body.dark .rating-stars {
+    color: #ffc107 !important;
+}
+
+body.dark .overall-rating {
+    color: #e8b87a !important;
+}
+
+/* Статистика в истории */
+body.dark .stat {
+    background: linear-gradient(135deg, #e8b87a, #c99a5a) !important;
+    color: #0f1215 !important;
+}
+
+/* FAQ */
+body.dark .faq-question {
+    color: #e8e8e8 !important;
+}
+
+body.dark .faq-answer {
+    color: #b0b8b8 !important;
+}
+
+/* Отзывы */
+body.dark .review-author {
+    color: #e8b87a !important;
+}
+
+body.dark .review-text {
+    color: #b0b8b8 !important;
+}
+
+body.dark .review-country {
+    color: #e8b87a !important;
+}
+
+body.dark .review-date {
+    color: #8a94a0 !important;
+}
+
+/* Карточки */
+body.dark .card-title {
+    color: #e8b87a !important;
+}
+
+body.dark .card-desc {
+    color: #b0b8b8 !important;
+}
+
+/* Рейтинг в карточках */
+body.dark .rating {
+    color: #e8b87a !important;
+}
+
+/* Закрытие модалки */
+body.dark .modal-close {
+    background: #2a3340 !important;
+    color: #e8e8e8 !important;
+}
+
+body.dark .modal-close:hover {
+    background: #3a4555 !important;
+    color: #ffffff !important;
+}
+
+/* Советы в модалке */
+body.dark .place-tips {
+    background: #252d35 !important;
+    color: #e8e8e8 !important;
+}
+
+body.dark .place-tips strong {
+    color: #e8b87a !important;
+}
+
+/* Поля ввода */
+body.dark .contact-form input,
+body.dark .contact-form textarea,
+body.dark .review-form input,
+body.dark .review-form textarea {
+    background: #252d35 !important;
+    border-color: #354049 !important;
+    color: #e8e8e8 !important;
+}
+
+body.dark .contact-form input::placeholder,
+body.dark .contact-form textarea::placeholder,
+body.dark .review-form input::placeholder,
+body.dark .review-form textarea::placeholder {
+    color: #8a94a0 !important;
+}
+
+body.dark .contact-form input:focus,
+body.dark .contact-form textarea:focus {
+    border-color: #e8b87a !important;
+    box-shadow: 0 0 0 3px rgba(232, 184, 122, 0.2) !important;
+}
+
+/* Поиск */
+body.dark .search-input {
+    background: #252d35 !important;
+}
+
+body.dark .search-input input {
+    color: #e8e8e8 !important;
+}
+
+body.dark .search-input input::placeholder {
+    color: #8a94a0 !important;
+}
+
+/* Кнопка переключения темы */
+body.dark .theme-toggle {
+    background: #e8b87a !important;
+    color: #0f1215 !important;
+    border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+body.dark .theme-toggle:hover {
+    background: #ffd966 !important;
+}
+
+/* Навигация в шапке (остаётся белой всегда) */
+.nav-links a {
+    color: white !important;
+}
+
+body.dark .nav-links a {
+    color: white !important;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    border-bottom-color: #f5c842 !important;
+    color: white !important;
+}
