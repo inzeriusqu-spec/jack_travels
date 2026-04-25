@@ -595,7 +595,7 @@ function renderReviews() {
                 <span class="review-author">${escapeHtml(review.author)}</span>
                 <span class="review-rating">${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}</span>
             </div>
-            <div class="review-country">📍 ${escapeHtml(review.country)}</div>
+            <div class="review-country">${escapeHtml(review.country)}</div>
             <div class="review-text">${escapeHtml(review.text)}</div>
             <div class="review-date">${formatDate(review.date)}</div>
         </div>
