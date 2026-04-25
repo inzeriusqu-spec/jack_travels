@@ -2881,3 +2881,17 @@ body.dark .nav-links a {
     from { opacity: 0; transform: translateY(15px); }
     to { opacity: 1; transform: translateY(0); }
 }
+/* Добавьте в конец вашего CSS */
+
+/* Отступ для меню, чтобы не наезжала кнопка */
+@media (min-width: 993px) {
+    .nav-links {
+        margin-right: 140px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 769px) {
+    .nav-links {
+        margin-right: 120px;
+    }
+}
